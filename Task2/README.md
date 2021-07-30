@@ -26,12 +26,13 @@ Expense Tracker
 
 ![task11](https://user-images.githubusercontent.com/85801018/127652298-99ede336-223c-462f-b32b-eddad0fac531.PNG)
 
-![task12](https://user-images.githubusercontent.com/85801018/127652301-ab46aea9-a671-46d8-8f2d-a45ad79e9957.PNG)
+![task12](https://user-images.githubusercontent.com/85801018/127687911-e56541a3-00b1-4c04-a2d6-ce2a9cf8482c.PNG)
 
-![task13](https://user-images.githubusercontent.com/85801018/127652309-cb9b968a-e105-468b-8182-1593cb1ce610.PNG)
+![task13](https://user-images.githubusercontent.com/85801018/127687901-bcc758b1-817b-4794-a1c3-1ae0a882d9a0.PNG)
 
-![task14](https://user-images.githubusercontent.com/85801018/127652315-10055aa9-8795-4b61-853e-a57e3d2b5c40.PNG)
+![task14](https://user-images.githubusercontent.com/85801018/127687904-5514b5ee-9637-41b4-bb76-9044d0e05ec2.PNG)
 
-![task15](https://user-images.githubusercontent.com/85801018/127652318-02d5d1a4-990c-4a04-90e8-fdd003a7a7cb.PNG)
+![task15](https://user-images.githubusercontent.com/85801018/127687906-a5eca6dc-63b9-4280-9cf6-e078c536c14a.PNG)
+
 
 
