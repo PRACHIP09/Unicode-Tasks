@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ROUTINE TRACKER</title>
+    <link rel="stylesheet" href="routinetrack.css">
+  </head>
+
+  <a href="index.html">
+  <button id="backbtn">Back</button>
+  </a>
+
+<body>
+  <div class="task">
+  <h1>Routine Tracker</h1>
+  <div class="container">
+
+    <div class ="timebx"><h2>Your total time<br></h2>
+    <div id="timetrack">150 mins</div>
+    </div>
+    <div class="completetime"><h2>Time taken for <br>completed tasks</h2>
+    <div id="completet">120mins</div>
+    </div>
+  </div>
+  
+  <div class="task-container">
+    <div class="time_yadd">
+      <h2>Time Taken for <br>compulsory tasks</h2>
+      <div id="time_yadd">100 mins</div>
+    </div>
+
+    <div class="time_nadd">
+      <h2>Time taken for <br>not compulsory tasks</h2>
+      <div id="time_nadd">50 mins</div>
+    </div>
+
+    <!--div class="expenses_sub">
+      <h2>Expenses</h2>
+      <div id="expenses_sub">Rs.1020</div>
+    </div>-->
+
+
+  </div>
+
+  <div class="routine_track">
+    <h2>Routine History</h2>
+    <ul id="Routine">
+      <!--<li> 
+          
+        walking
+        <div>
+          <span class="time_taken_y">60 mins </span>
+          <span class="date">29/10/2021</span>
+          <button>edit</button>
+          <button>x</button>
+        </div>
+      </li>
+      <li>
+         
+        planting
+        <div>
+          <span class="time_taken_y">50 mins</span>
+          <span class="date">29/10/2021</span>
+          <button>edit<button>
+          <button>x</button>
+        </div>
+      </li>
+      <li>
+      
+  
+        reading
+        <div>
+          <span class="time_taken_n">50 mins</span>
+          <span class="date">29/10/2021</span>
+          <button>x</button>
+        </div>
+      </li>-->
+
+    </ul>
+  </div>
+
+  <div class="form">
+    <h2>Add new Task </h2>
+    <form onsubmit="return false" autocomplete="off">
+      <label for="name">performed task</label>
+      <input id="name" type="text">
+      <label for="timestart">Time taken to complete the task in mins</label>
+      <input id="time" type="number">
+      <label id="dateday">Date</label>  
+      <input id="date" type="date">
+      <label id="quantity"></label>
+      <button id="time_ytakenbtn">compulsory</button>
+      <button id="time_ntakenbtn">not compulsory</button>
+
+    </form>
+  </div>
+  </div>
+  <script src="tasktracker.js"></script>
+
+</body>
+</html>

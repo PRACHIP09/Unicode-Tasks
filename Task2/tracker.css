@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Maven pro';
+  }
+.task
+{
+    text-align: center;
+    max-width: 70%;
+}
+#routinetext
+{
+    font-size: 30px;
+    background-color: linear;
+    border: 1px solid black;
+    background-image:linear-gradient(to right, #10082c,#197177);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.heading
+{
+    text-decoration: underline;
+    font-style: italic;
+}
+.text
+{
+    color: blue;
+    font-style: italic;
+
+}
+#routinetr
+{
+    border: 1px solid yellow;
+    background-image:linear-gradient(to right,  #FFB330,#f7fa65);
+    font-size: 1.3em;
+    font-family: 'maven pro';
+    border-radius: 50px;
+    max-width: 60%;
+    font-weight: 700;
+
+}
+#expensetr
+{   
+    border: 1px solid yellow;
+    background-image:linear-gradient(to right, #FFB330,#f7fa65);
+    font-size: 1.2em;
+    font-family: 'Maven pro';
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+button
+{
+    width: 200px;
+    height:50px;
+}

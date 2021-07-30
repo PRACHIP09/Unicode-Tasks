@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
+
+
+
+:root{
+  --income: rgb(27, 216, 27);
+  --savings: blue;
+  --expenses: red;
+}
+body{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Maven pro';
+}
+#backbtn
+{
+  border: none;
+  border-radius: 50px;
+  background-image:linear-gradient(to right, #FFB330,#f7fa65);
+  margin-right: 400px;
+  width: 100px;
+  height: 30px;
+  font-family: 'Maven pro';
+  font-size: 1.3em;
+
+}
+.container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.income h1{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.container #balance
+{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.container #payments
+{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  justify-content: left;
+}
+
+.cash-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-shadow : 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.income_add
+{
+  border-right: 1px solid #dedede;
+  padding: 20px;
+}
+.savings
+{
+  border-right: 1px solid #dedede;
+  padding:20px;
+}
+.expenses_sub
+{
+  border-right: 1px solid #dedede;
+  padding: 20px;
+}
+.payment_sub
+{
+  border-right: 1px solid #dedede;
+  padding: 20px;
+}
+
+#income_add
+{
+  font-size: 1.3em;
+  color: var(--income);
+}
+#savings 
+{
+  font-size: 1.3em;
+  color: var(--savings);
+}
+#expenses_sub
+{
+  font-size: 1.3em;
+  color: var(--expenses);
+}
+#payments
+{
+  font-size: 1.3em;
+  color: var(--expenses);
+}
+#transaction
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#transaction li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding : 15px;
+  margin-bottom: 12px;
+  box-shadow : 1px 1px 3px rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+/*#pay li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding : 15px;
+  margin-bottom: 12px;
+  box-shadow : 1px 1px 3px rgba(0,0,0,0.5);
+  border-radius: 5px;
+}*/
+#transaction li .income_amnt{
+    display: inline-block;
+    background-color: var(--income);
+    color: #000;
+    padding:5px;
+    border-radius: 3px;
+    margin-right: 6px;
+}
+#transaction li .expense_amnt{
+  display: inline-block;
+  background-color: var(--expenses);
+  color: #fff;
+  padding:5px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+#transaction li .quantity{
+  display: inline-block;
+  background-color: yellow;
+  color: #000;
+  padding:5px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+#transaction li .payment_sub{
+  display: inline-block;
+  color: orange;
+  padding:5px;
+  border-radius: 3px;
+  margin-right: 10px;
+  text-decoration: line-through;
+}
+#transaction li .savings_amnt{
+  display: inline-block;
+  background-color: var(--savings);
+  color: rgb(195, 240, 236);
+  padding:5px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+#transaction li button{
+  padding: 2px 5px;
+  margin: 2px;
+  
+}
+
+.form form{
+  display: flex;
+  flex-direction: column;
+}
+.form form label{
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+.form form input
+{
+  height: 25px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+.form form button{
+  border: none;
+  padding : 10px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+.incomebtn
+{
+  background-image: linear-gradient(to right,#6cff95,#1adb54);
+  border-radius: 50px;
+  font-family: 'Maven pro';
+}
+.expensebtn
+{
+  background-image:linear-gradient(to right,#FC210D,#C72C41 );
+  border-radius: 50px;
+  font-family: 'Maven pro';
+}
+.savingsbtn
+{
+  background-image: linear-gradient(to bottom right,#96CAF7,blue);
+  border-radius: 50px;
+  font-family: 'Maven pro';
+}
