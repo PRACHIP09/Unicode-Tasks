@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+            <script>
+            var size = prompt("Enter no of elements : ");
+            var search =[];
+            document.write("No of elements : " + size + "<br>")
 
+            for(let i=0 ; i< size ;i++)
+            {
+                search[i] = prompt("Enter the name : ");
+            }
+            for(let i= 0 ; i< size ; i++)
+            {
+                document.write(search[i] + "<br>");
+            }
+            let count=0,i,j;
+            for(i=0;i<size;i++)
+            {
+                for(j=0;j<i;j++)
+                {
+                    if(search[i]==search[j])
+                    break;
+                }
+                if(i==j)
+                count++;
+            }
+            document.write("Number of distinct words is : " +count + "<br>");
+             for(let i=0;i< size; i++)
+            {
+                let a=0;
+                let k=1;
+                for(let j=0;j<size;j++)
+                {
+                    if(j>=i)
+                    {
+                        if(search[i] == search[j] && (j!=i))
+                        {
+                            k++;
+                        }
+                    }
+                    else if(search[i] == search[j])
+                    {
+                        a=1;
+                    }
+                }
+                if(a!=1)
+                {
+                    document.write("occurance of " + search[i] + ":" + k + "<br>");
+                }
+            }
+            
+           
+
+        </script>
+    </body>
+</html>
