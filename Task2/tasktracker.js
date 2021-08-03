@@ -77,13 +77,13 @@ function oncompleteclick(event)
     var id = parseInt(event.target.getAttribute('data-id'));
     for(var i = 0 ; i < state.routines.length ; i++)
     {
-        if (state.routines[i].id === id){
+        if (state.routines[i].id === id && state.routines[i].type != 'complete'){
 
             temp = state.routines[i].type;
             state.routines[i].type = 'complete';
             state.routines[i].tempor = temp;
         }
-        if(state.filterid[i] === id ){
+        if(state.filterid[i] === id && state.routines[i].type != 'complete'){
             deletesort=i;
         }
         state.filterd.splice(deletesort, 1);
@@ -184,7 +184,7 @@ function oneditClick(event)
     for(var i = 0 ; i < state.routines.length ; i++)
     {
 
-        if (state.routines[i].id === id){
+        if (state.routines[i].id === id && state.routines[i].type != 'complete'){
 
             state.routines[i].name =prompt("enetr name :",state.routines[i].name)
             state.routines[i].time =parseInt(prompt("enter time :",state.routines[i].time))

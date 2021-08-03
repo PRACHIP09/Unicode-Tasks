@@ -87,12 +87,12 @@ function onpayclick(event)
     var id = parseInt(event.target.getAttribute('data-id'));
     for(var i = 0 ; i < state.transactions.length ; i++)
     {
-        if (state.transactions[i].id === id && state.transactions[i].type != 'expense'){
+        if (state.transactions[i].id === id && state.transactions[i].type != 'expense' && state.transactions[i].type != 'payments'){
             temp = state.transactions[i].type;
             state.transactions[i].type = 'payments';
             state.transactions[i].tempor = temp; 
         }
-        if(state.filterid[i] === id && state.filtertype[i] != 'expense'){
+        if(state.filterid[i] === id && state.filtertype[i] != 'expense' && state.transactions[i].type != 'payments'){
             deletesort=i;
         }
         state.filteramnt.splice(deletesort, 1);
@@ -228,7 +228,7 @@ function oneditClick(event)
     for(var i = 0 ; i < state.transactions.length ; i++)
     {
 
-        if (state.transactions[i].id === id){
+        if (state.transactions[i].id === id && state.transactions[i].type != 'payments'){
 
             state.transactions[i].name =prompt("enetr name :",state.transactions[i].name)
             state.transactions[i].amount = parseInt(prompt("enter amount :",state.transactions[i].amount))
@@ -415,7 +415,7 @@ function display()
         else if(state.filtertype[i] == 'savings')
         {
             amountEl.style.color="#1F51FF";
-            totalamnt.style.color="blue";
+            totalamnt.style.color="#1F51FF";
 
         }
         else if(state.filtertype[i] == 'payments')
