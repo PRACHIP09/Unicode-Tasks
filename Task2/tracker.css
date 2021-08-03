@@ -6,6 +6,8 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Maven pro';
+    background: #131419;
+    color: rgb(144, 227, 241);
   }
 .task
 {
@@ -18,7 +20,7 @@ body{
     background-color: linear;
     border: 1px solid black;
     background-image:linear-gradient(to right, #10082c,#197177);
-    color: #fff;
+    color: rgb(144, 227, 241);
     padding: 10px;
     border-radius: 20px;
 
@@ -27,34 +29,53 @@ body{
 {
     text-decoration: underline;
     font-style: italic;
+    border-radius: 20px;
 }
 .text
 {
-    color: blue;
+    color: rgb(233, 105, 20);
     font-style: italic;
 
 }
-#routinetr
+.routinetr
 {
-    border: 1px solid yellow;
-    background-image:linear-gradient(to right,  #FFB330,#f7fa65);
+    border: none;
+    outline: none;
     font-size: 1.3em;
     font-family: 'maven pro';
-    border-radius: 50px;
+    background: #131419;
+    color: #c7c7c7;
     max-width: 60%;
     font-weight: 700;
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.05),
+                5px 5px 15px rgba(0,0,0,0.5);
+    border-radius: 20px;
 
 }
-#expensetr
+.routinetr:hover
+{
+    box-shadow: inset -5px -5px 10px rgba(255,255,255,0.05),
+                inset 5px 5px 15px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+.expensetr
 {   
-    border: 1px solid yellow;
-    background-image:linear-gradient(to right, #FFB330,#f7fa65);
+    border: none;
+    outline: none;
     font-size: 1.2em;
     font-family: 'Maven pro';
-    border-radius: 50px;
     font-weight: 700;
+    background: #131419;
+    color: #c7c7c7;
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.05),
+                5px 5px 15px rgba(0,0,0,0.5);
+    border-radius: 20px;
 }
-
+.expensetr:hover{
+    box-shadow: inset -5px -5px 10px rgba(255,255,255,0.05),
+                inset 5px 5px 15px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
 button
 {
     width: 200px;
