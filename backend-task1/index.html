@@ -27,10 +27,16 @@
                 count++;
             }
             document.write("Number of distinct words is : " +count + "<br>");
-             for(let i=0;i< size; i++)
+            var large = [];
+            var small = [];
+            let max=0;
+            let min=1;
+             for(i=0;i< size; i++)
             {
                 let a=0;
                 let k=1;
+                
+
                 for(let j=0;j<size;j++)
                 {
                     if(j>=i)
@@ -39,6 +45,7 @@
                         {
                             k++;
                         }
+
                     }
                     else if(search[i] == search[j])
                     {
@@ -47,9 +54,22 @@
                 }
                 if(a!=1)
                 {
+                    if(max<k)
+                    {
+                        max=k;
+                        large = search[i];
+                    }
+                    if (min > k || min == 1)
+                    {
+                        min = k;
+                        small = search[i];
+                        console.log(small)
+                    }
                     document.write("occurance of " + search[i] + ":" + k + "<br>");
                 }
             }
+            document.write("The most repeated word is : "+ large +" It is repeated : " + max + "times" + "<br>");
+            document.write("The least repeated word is : " + small + " It is repeated : " + min + "times");
             
            
 
