@@ -282,7 +282,7 @@ function calculate()
 
 
     }
-    balance = income + savings;
+    balance = income + savings+ payment;
     
 
     state.balance = balance;
