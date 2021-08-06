@@ -105,6 +105,7 @@ function onpayclick(event)
     display();
     calculate();
 }
+
 function sortall()
 {    
     var i;
@@ -281,7 +282,7 @@ function calculate()
 
 
     }
-    balance = income + savings-payment;
+    balance = income + savings;
     
 
     state.balance = balance;
