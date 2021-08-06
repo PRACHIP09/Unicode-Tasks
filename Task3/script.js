@@ -253,7 +253,6 @@ districtList.addEventListener("change", function () {
       );
       var countCentersVal = vaccinationCentersData.sessions.length;
       var districtName = districtList.innerHTML;
-      console.log("zzzzzzzzzzzzzzz" + districtName);
       countCenters.innerText = `Total Number Of Vaccination Centers Is - ${countCentersVal}`;
       countCenters.style.display = "";
 
@@ -351,7 +350,7 @@ function startFilter(filterValue) {
         }
       }
     }
-  } else if (filter == "COVAXIN") {
+  }  else if (filter == "COVAXIN") {
     for (i = 0; i < tr.length; i++) {
       td = tr[i].getElementsByTagName("td")[8];
       if (td) {
@@ -400,6 +399,25 @@ function startFilter(filterValue) {
         txtValue = td.textContent || td.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
           tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+}
+function endFilter(filterValue) {
+  var filterreqVal = filterValue.value;
+  filter = filterreqVal.toUpperCase();
+  console.log(filter);
+  if (filter == 45) {
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[9];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+          td.style.backgroundColor = "#ba9286";
         } else {
           tr[i].style.display = "none";
         }
