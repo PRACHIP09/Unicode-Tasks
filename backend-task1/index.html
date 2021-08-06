@@ -9,13 +9,14 @@
 
             for(let i=0 ; i< size ;i++)
             {
-                search[i] = prompt("Enter the name : ");
+                search[i] = prompt("Enter the " + (i+1) + " word  : " );
             }
             for(let i= 0 ; i< size ; i++)
             {
                 document.write(search[i] + "<br>");
             }
-            let count=0,i,j;
+            let count=0,i,j,count1=0;
+            //distinct number of elements
             for(i=0;i<size;i++)
             {
                 for(j=0;j<i;j++)
@@ -26,11 +27,11 @@
                 if(i==j)
                 count++;
             }
-            document.write("Number of distinct words is : " +count + "<br>");
-            var large = [];
-            var small = [];
-            let max=0;
-            let min=1;
+            document.write("Number of distinct elements is : " +count + "<br>");
+            var large = 1;
+            let max,min;
+
+            //occurence of each element
              for(i=0;i< size; i++)
             {
                 let a=0;
@@ -54,23 +55,39 @@
                 }
                 if(a!=1)
                 {
-                    if(max<k)
-                    {
-                        max=k;
-                        large = search[i];
-                    }
-                    if (min > k || min == 1)
-                    {
-                        min = k;
-                        small = search[i];
-                        console.log(small)
-                    }
+                   
                     document.write("occurance of " + search[i] + ":" + k + "<br>");
                 }
             }
-            document.write("The most repeated word is : "+ large +" It is repeated : " + max + "times" + "<br>");
-            document.write("The least repeated word is : " + small + " It is repeated : " + min + "times");
+
+            //distinct elements
+            let filter = search.filter((c,index) =>{
+                return search.indexOf(c) === index;
+            }) 
+            document.write("The distinct elements are : " + filter)
+            console.log(filter)
+
+
+            //most and least repeated words
+            for(i=1;i<size ; i++)
+            {
+                temp = search[i];
+                max=0;
+                for(j=0;j<size;j++)
+                {
+                    if(search[j] === temp)
+                    max++;
+                    if(max > count)
+                    {
+                        element = temp;
+                        count = max;
+                    }
+
+                }
             
+            }
+
+            document.write("<br>" + "The most repeated word is : '" + element +"' .It is repeated : " + count + "times");
            
 
         </script>
