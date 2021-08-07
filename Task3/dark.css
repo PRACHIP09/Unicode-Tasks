@@ -19,17 +19,6 @@ body {
   font-weight: bolder;
   text-decoration: underline;
 }
-#name,
-#lod {
-  color: rgb(255, 255, 255);
-  font-weight: bolder;
-  background-color: red;
-  width: 50%;
-  font-size: 2em;
-  top: 50%;
-  left: 28%;
-  position: absolute;
-}
 #container {
   width: 100%;
   position: absolute;
@@ -137,10 +126,6 @@ button {
 a {
   color: rgb(255, 0, 34);
 }
-#lod {
-  background-color: rgb(255, 0, 34);
-  color: rgb(0, 0, 0);
-}
 select {
   width: 22.3%;
   height: 45px;
@@ -168,21 +153,6 @@ select {
     cursor: pointer;
     margin-top: 5px;
   }
-  #name,
-  #lod {
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-    background-color: red;
-    width: 50%;
-    font-size: 2em;
-    top: 40%;
-    left: 26%;
-    position: absolute;
-  }
-  #lod {
-    background-color: rgba(255, 255, 255);
-    color: rgb(0, 0, 0);
-  }
   table,
   td,
   th {
@@ -200,17 +170,6 @@ select {
     left: 29%;
     bottom: 40%;
   }
-  #name,
-  #lod {
-    color:#f3ecef ;
-    font-weight: bolder;
-    background-color: red;
-    width: 50%;
-    font-size: 1.5em;
-    top: 40%;
-    left: 28%;
-    position: absolute;
-  }
 }
 tr:nth-child(even) {
   background-color: #2f3a3b;
@@ -219,10 +178,5 @@ tr:nth-child(even) {
 tr:hover {
   background-color: #583a47;
   color: #000;
-}
-.lod {
-  color: red;
-  position: relative;
-  left: 40%;
 }
 
