@@ -1,25 +1,20 @@
 Task 3 - Cowin Api
 
 
+![cowin2](https://user-images.githubusercontent.com/85801018/128601770-8edfc391-5cdf-4906-ab4f-0d43136d2340.PNG)
 
-![cowin1](https://user-images.githubusercontent.com/85801018/127677634-7379c9bb-5f22-4694-91f3-fb1587691142.PNG)
-
-![cowin2](https://user-images.githubusercontent.com/85801018/127677655-270372d1-24aa-47ae-91da-03c5c40dec47.PNG)
-
-![cowin3](https://user-images.githubusercontent.com/85801018/127677669-30e5f098-c0ef-40f8-ba9e-b7f2dd5902c7.PNG)
-
-![cowin4](https://user-images.githubusercontent.com/85801018/127677680-2a1fe498-25f4-4de7-a0cd-6818746c3624.PNG)
+![cowin1](https://user-images.githubusercontent.com/85801018/128601772-85983484-9989-4e34-a312-fe9a21d5df93.PNG)
 
 Dark Mode
 
-![cowin5](https://user-images.githubusercontent.com/85801018/127677693-dcbdfbc1-aab0-467a-bcd8-484a30e4815d.PNG)
+![cowin3](https://user-images.githubusercontent.com/85801018/128601773-85d4c983-2d18-489c-98c6-54f3d3082738.PNG)
 
-![cowin6](https://user-images.githubusercontent.com/85801018/127677703-13c52b16-c32c-460b-893b-ae299e2bbe90.PNG)
+![cowin4](https://user-images.githubusercontent.com/85801018/128601774-7d2c0ce3-7aa5-40d1-bb7c-24882cbe3fd8.PNG)
 
-Responsive Skills - 
+![cowin5](https://user-images.githubusercontent.com/85801018/128601776-3e94ce8f-3bc7-4c03-8317-1da76e6107d3.PNG)
 
-![cowin7](https://user-images.githubusercontent.com/85801018/127677705-5d99ce35-bb23-4d2c-9a6a-7b617f3ffd47.PNG)
 
-![cowin8](https://user-images.githubusercontent.com/85801018/127677709-a776bafb-70ba-45dd-8db3-9e7c772f2d4b.PNG)
+
+
 
 
