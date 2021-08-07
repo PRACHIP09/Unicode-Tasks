@@ -1,7 +1,7 @@
 const pincode = document.getElementById("pincode");
 const datepic = document.getElementById("date");
 const search = document.getElementById("search");
-const na = document.getElementById("name");
+//const na = document.getElementById("name");
 const loading = document.getElementById("load");
 const container = document.getElementById("tb");
 const tabel = document.getElementById("mytable");
@@ -23,11 +23,11 @@ const getVaccineData = (pincod, date) => {
       .then((response) => {
         if (response.status !== 200) {
           tabel.style.display = "none";
-          na.innerText = "Please Select Valied Pincode";
-          lo.innerText = "";
-        } else {
-          na.innerText = " ";
-        }
+          //na.innerText = "Please Select Valied Pincode";
+          loading.innerText = "";
+        } /*else {
+          //na.innerText = " ";
+        }*/
         return response.json();
       })
 
@@ -76,7 +76,7 @@ const getVaccineData = (pincod, date) => {
           console.log(sess_data);
           for (let m = 0; m < sess_data.length; m++) {
             var dup = sess_data[m] + "span";
-            
+            console.log(dup)
             var dup = document.createElement("td");
             newDiv.appendChild(dup);
             var dupdata = document.createTextNode(sess_data[m]);
@@ -104,28 +104,18 @@ pincode.addEventListener("input", function () {
   if (pincode.value.length === 6) {
     console.log("change");
     var pin = pincode.value;
-    if (pin === "") {
-      na.innerText = "Please Provide PinCode";
-      tabel.style.display = "none";
-      return;
-    }
-
     var dat = datepic.value || final_auto_date;
-    if (dat === "") {
-      na.innerText = "Please Provide Date";
-    }
     var date_spli = dat.split("-");
     var modified_date = `${date_spli[2]}-${date_spli[1]}-${date_spli[0]}`;
     console.log("Modified-Date:" + modified_date);
     getVaccineData(pin, modified_date);
+
   } else {
-    na.innerText = "";
     var Table = document.getElementById("tb");
     Table.innerHTML = "";
     tabel.style.display = "none";
   }
 });
-
 //to select date
 datepic.addEventListener("input", function () {
   var Table = document.getElementById("tb");
@@ -133,23 +123,15 @@ datepic.addEventListener("input", function () {
   if (pincode.value.length === 6) {
     console.log("change");
     var pin = pincode.value;
-    if (pin === "") {
-      na.innerText = "Please Provide PinCode";
-      return;
-    }
-
     var dat = datepic.value;
-    console.log(dat);
-    if (dat === "") {
-      na.innerText = "Please Provide Date";
-    }
+
     var date_chng = dat.split("-");
     var modified_date = `${date_chng[2]}-${date_chng[1]}-${date_chng[0]}`;
     console.log("Modified-Date:" + modified_date);
     getVaccineData(pin, modified_date);
    } 
   else {
-    na.innerText = "";
+
     var Table = document.getElementById("tb");
     Table.innerHTML = "";
   }
