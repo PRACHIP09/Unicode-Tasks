@@ -118,7 +118,6 @@ pincode.addEventListener("input", function () {
     var modified_date = `${date_spli[2]}-${date_spli[1]}-${date_spli[0]}`;
     console.log("Modified-Date:" + modified_date);
     getVaccineData(pin, modified_date);
-    //getVaccineDataByState(modified_date);
   } else {
     na.innerText = "";
     var Table = document.getElementById("tb");
