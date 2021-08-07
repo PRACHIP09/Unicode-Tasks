@@ -34,6 +34,10 @@ var quntyElInput = document.querySelector('#quantity');
 
 function init()
 {
+    var localState = JSON.parse(localStorage.getItem('expensetrackerstate'));
+    if(localState !== null){
+        state = localState;
+    }
     calculate();
     initialadd();
 }
@@ -290,7 +294,11 @@ function calculate()
     state.expense = expense;
     state.savings = savings;
     state.payments = payment;
+
+    localStorage.setItem('expensetrackerstate', JSON.stringify(state));
     display();
+
+
     
 }
 function display()

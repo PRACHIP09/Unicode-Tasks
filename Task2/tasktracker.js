@@ -29,7 +29,10 @@ var dateElInput = document.getElementById('date');
 
 function init()
 {
-    
+    var localState = JSON.parse(localStorage.getItem('routinetrackerstate'));
+    if(localState !== null){
+        state = localState;
+    }
     calculate();
     initialadd();
 }
@@ -69,7 +72,7 @@ function onYestimeClick()
 }
 function onNotimeClick()
 {
-    addRoutines(nameEl.value, timeElInput.value,dateElInput.value,  'notcompulsory')
+    addRoutines(nameEl.value, timeElInput.value,dateElInput.value,  'notcompulsory');
 }
 function oncompleteclick(event)
 {
@@ -144,7 +147,7 @@ function sortall()
             return el != null && el != '';
         });
     }
-    console.log(state.filtern,state.filterd,state.filterti,state.filterty,state.filterid)
+    console.log(state.filtern,state.filterd,state.filterti,state.filterty,state.filterid);
     
 }   
 function onDeleteClick(event)
@@ -191,9 +194,8 @@ function oneditClick(event)
             state.routines[i].date =prompt("enter the date :",state.routines[i].date)
         } 
          display();
-         calculate();  //addRoutines(nameEl.value, timeElInput.value, dateElInput.value,  'compulsory')
+         calculate();  
     }
-
 }
 function calculate()
 {
@@ -237,6 +239,7 @@ function calculate()
     state.notcompulsory = notcompulsoryt;
     state.completetime = completet;
 
+    localStorage.setItem('routinetrackerstate', JSON.stringify(state));
     display();
     
 }
