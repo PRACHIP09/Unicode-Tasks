@@ -9,26 +9,6 @@ body {
   overflow-x: hidden;
   font-family: "BioRhyme";
   background-color: #000000;
-  font-size: 1.05em;
-}
-#filter {
-  display: block;
-  left: 40%;
-  position: relative;
-  cursor: pointer;
-}
-.viewFilters {
-  transition: display 0.5s linear;
-  margin-top: 5px;
-  display: none;
-}
-.viewFilters button {
-  cursor: pointer;
-}
-.view {
-  transition: display 0.5s linear;
-  margin-top: 5px;
-  display: block;
 }
 #testdata {
   display: block;
@@ -146,14 +126,6 @@ button {
     background-color: #fff;
     border-color: #fff;
 }
-footer {
-  width: 100%;
-  position: fixed;
-  color: rgb(0, 0, 0);
-  bottom: 0;
-  font-weight: bold;
-  background-color: #fff;
-}
 .source {
   position: absolute;
   left: 5%;
@@ -227,11 +199,6 @@ select {
     position: absolute;
     left: 29%;
     bottom: 40%;
-  }
-  footer {
-    display: block;
-    height: 6%;
-    font-size: 0.9em;
   }
   #name,
   #lod {
