@@ -1,6 +1,13 @@
 # Unicode-Tasks
 Unicode-FrontEnd & BackEnd Tasks
 
+Componets used are
+
+1.HTML
+2.CSS
+3.Javascript
+4.Bootstrap
+
 Task-1: Personal Blog - https://unicode-blog-task1.netlify.app/
 
 Task-2: Tracker - https://unicode-tracker-task2.netlify.app/
